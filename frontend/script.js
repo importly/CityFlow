@@ -166,7 +166,7 @@ function start() {
                 infoAppend("Reading replay file failed");
                 loading = false;
                 return;
-            }
+            }RoadnetFileDom.files[0]
 
             totalStep = logs.length;
             if (showChart) {
@@ -399,7 +399,7 @@ function drawRoadnet() {
     TURN_SIGNAL_LENGTH = CAR_LENGTH;
     TURN_SIGNAL_WIDTH  = CAR_WIDTH / 2;
 
-    var carG = new Graphics();
+    var carG = new Graphics(); //! todo
     carG.lineStyle(0);
     carG.beginFill(0xFFFFFF, 0.8);
     carG.drawRect(0, 0, CAR_LENGTH, CAR_WIDTH);
