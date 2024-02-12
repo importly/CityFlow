@@ -4,12 +4,12 @@
 id = Math.random().toString(36).substring(2, 15);
 
 BACKGROUND_COLOR = 0xe8ebed;
-LANE_COLOR = 0x586970;
+LANE_COLOR = 0x333333;
 LANE_BORDER_WIDTH = 1;
 LANE_BORDER_COLOR = 0x82a8ba;
 LANE_INNER_COLOR = 0xbed8e8;
-LANE_DASH = 10;
-LANE_GAP = 12;
+LANE_DASH = 5;
+LANE_GAP = 6;
 TRAFFIC_LIGHT_WIDTH = 3;
 MAX_TRAFFIC_LIGHT_NUM = 100000;
 ROTATE = 90;
@@ -249,7 +249,7 @@ function updateReplaySpeed(speed){
     replaySpeedDom.innerHTML = speed.toFixed(2);
 }
 
-updateReplaySpeed(0.5);
+updateReplaySpeed(0.75);
 
 replayControlDom.addEventListener('change', function(e){
     updateReplaySpeed(replayControlDom.value / 100);
